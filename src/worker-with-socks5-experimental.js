@@ -143,7 +143,7 @@ async function vlessOverWSHandler(request) {
 					return;
 				}
 			}
-			// ["version", "附加信息长度 N"]
+			// ["version", "additional information length N"]
 			const vlessResponseHeader = new Uint8Array([vlessVersion[0], 0]);
 			const rawClientData = chunk.slice(rawDataIndex);
 
@@ -802,5 +802,4 @@ clash-meta
 ################################################################
 `;
 }
-
 
